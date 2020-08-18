@@ -1,0 +1,22 @@
+#module {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#module p.collapse[aria-expanded="false"] {
+  display: block;
+  height: 3rem !important;
+  overflow: hidden;
+}
+
+#module p.collapse.show[aria-expanded="false"] {
+  height: 3rem !important;
+}
+
+#module a.collapsed:after {
+  content: '+ Show More';
+}
+
+#module a:not(.collapsed):after {
+  content: '- Show Less';
+}
